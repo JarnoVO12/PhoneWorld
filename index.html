@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/petite-vue"></script>
+    <script src="https://unpkg.com/css-paint-polyfill"></script>
+
+
+    <title>Phone World</title>
+    <script src="js/gsap.js"></script>
+    <script type="module" src="js/petite-vue.js"></script>
+    <script src="js/index.js"></script>
+
+
+
+</head>
+<body>
+<header>
+<nav>
+    <a href="#home" class="logo">Phone<span>World</span></a>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#houdini">Houdini</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<main>
+    <section id="home">
+        <h1 class="text-h1">Samsung galaxy z flip 4</h1>
+        <div class="stripe"></div>
+        <div class="galaxyPhone">
+            <img src="recources/galaxy-z-flip4.webp" alt="Samsung galaxy z flip phone">
+        </div>
+    </section>
+
+    <section v-scope id="shop">
+        <h2>Phone shop</h2>
+
+        <div class="select">
+            <div class="dropdown">
+                <button class="dropbtn">Select a phone <span class="arrow">&#8681</span></button>
+                <div class="dropdown-content">
+                    <a @click="ZFlip4" href="#shop">Samsung Galaxy Z Flip 4</a>
+                    <a @click="iphone14" href="#shop">Apple iPhone 14</a>
+                    <a @click="OnePlus10Pro" href="#shop">OnePlus 10 Pro</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Select a phone <span class="arrow">&#8681</span></button>
+                <div class="dropdown-content">
+                    <a @click="ZFlip4_2" href="#shop">Samsung Galaxy Z Flip 4</a>
+                    <a @click="iphone14_2" href="#shop">Apple iPhone 14</a>
+                    <a @click="OnePlus10Pro2" href="#shop">OnePlus 10 Pro</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="phone-grid">
+            <div class="phone-card" id="phoneCard1">
+                <h3>{{name}}</h3>
+                <img src="" alt="">
+                <p>Total storage capacity: <span>{{storage}}</span></p>
+                <p>Internal RAM: <span>{{ram}}</span></p>
+                <p>Weight: <span>{{weight}}</span></p>
+                <p>IP certification: <span>{{ipc}}</span></p>
+                <p>Screen size: <span>{{screen}}</span></p>
+                <p>Refresh rate: <span>{{refresh}}</span></p>
+                <p>Battery capacity: <span>{{battery}}</span></p>
+                <p>Price: <span>{{price}}</span></p>
+            </div>
+
+            <div class="phone-card"  id="phoneCard2">
+                <h3>{{name2}}</h3>
+                <img src="" alt="">
+                <p>Total storage capacity: <span>{{storage2}}</span></p>
+                <p>Internal RAM: <span>{{ram2}}</span></p>
+                <p>Weight: <span>{{weight2}}</span></p>
+                <p>IP certification: <span>{{ipc2}}</span></p>
+                <p>Screen size: <span>{{screen2}}</span></p>
+                <p>Refresh rate: <span>{{refresh2}}</span></p>
+                <p>Battery capacity: <span>{{battery2}}</span></p>
+                <p>Price: <span>{{price2}}</span></p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="houdini">
+        <div class="slogan">
+            <h2>One plus</h2>
+            <p class="slogan-text"><span id="never">Never</span> <span id="settle">Settle</span></p>
+            <div id="picture"></div>
+        </div>
+    </section>
+
+    <div style="height: 50vh"></div>
+
+
+</main>
+
+<footer>
+
+</footer>
+</body>
+</html>

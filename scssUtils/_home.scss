@@ -1,0 +1,27 @@
+@import "variables";
+
+#home{
+  height: 90vh;
+}
+
+.stripe {
+  position: absolute;
+  height: 100px;
+  //width: 100%;
+  top: 400px;
+  background: linear-gradient(to right, $colorPrimary, $colorSecondary);
+}
+
+.galaxyPhone{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 1;
+}
+
+.text-h1{
+  position: absolute;
+  top: 350px;
+  left: 45%;
+  z-index: 1;
+}

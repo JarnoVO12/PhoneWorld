@@ -1,0 +1,102 @@
+@import "variables";
+
+#shop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-grid{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5em;
+}
+
+.phone-card{
+  //background-color: $colorPrimary;
+  background: linear-gradient(to bottom, $colorPrimary, $colorSecondary);
+
+  border-radius: 2em;
+  padding: 0 4em 2em;
+  //box-shadow: rgb(25, 154, 238) 0px 5px 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  min-width: 40em;
+
+  p{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span{
+    text-transform: none;
+  }
+}
+
+
+
+.select{
+  display: flex;
+  gap: 5em;
+  margin: 3em;
+
+}
+
+.dropbtn {
+  background-color: $colorPrimary;
+  color: $textColorWhite;
+  padding: 16px;
+  font-size: 16px;
+
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+
+  min-width: 25em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-size: 1.5rem;
+
+  display: none;
+  position: absolute;
+  background-color: $textColorWhite;
+  min-width: 25em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 1em;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: $textColorBlack;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 1em;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: $colorPrimary;}
+
+.arrow{
+  font-size: 1.4em;
+
+  display: flex;
+  justify-content: end;
+  margin-top: -22px;
+  margin-right: 5px;
+  padding: 0;
+}

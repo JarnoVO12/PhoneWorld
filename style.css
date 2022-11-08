@@ -1,0 +1,229 @@
+header {
+  background-color: #0a0a0a;
+  opacity: 0.9;
+  border-radius: 2em;
+  margin: 10px 5px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10% 40px;
+}
+nav .logo {
+  font-size: 5em;
+  text-decoration: none;
+  color: #199aee;
+}
+nav .logo span {
+  color: #f8f8f8;
+}
+nav .logo:hover {
+  color: #f8f8f8;
+  transition: 0.5s ease-in-out;
+}
+nav .logo:hover span {
+  color: #199aee;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  font-size: 3em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #f8f8f8;
+}
+nav ul li a:hover {
+  color: #199aee;
+  transition: 0.3s;
+}
+
+#home {
+  height: 90vh;
+}
+
+.stripe {
+  position: absolute;
+  height: 100px;
+  top: 400px;
+  background: linear-gradient(to right, #199aee, #0067dc);
+}
+
+.galaxyPhone {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 1;
+}
+
+.text-h1 {
+  position: absolute;
+  top: 350px;
+  left: 45%;
+  z-index: 1;
+}
+
+#shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5em;
+}
+
+.phone-card {
+  background: linear-gradient(to bottom, #199aee, #0067dc);
+  border-radius: 2em;
+  padding: 0 4em 2em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-width: 40em;
+}
+.phone-card p {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+.phone-card span {
+  text-transform: none;
+}
+
+.select {
+  display: flex;
+  gap: 5em;
+  margin: 3em;
+}
+
+.dropbtn {
+  background-color: #199aee;
+  color: #f8f8f8;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+  min-width: 25em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-size: 1.5rem;
+  display: none;
+  position: absolute;
+  background-color: #f8f8f8;
+  min-width: 25em;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1em;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #151515;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 1em;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #199aee;
+}
+
+.arrow {
+  font-size: 1.4em;
+  display: flex;
+  justify-content: end;
+  margin-top: -22px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+#houdini {
+  margin-top: 50em;
+  height: 70vh;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120vh;
+  padding-top: 15em;
+  background: paint(stars), #000000;
+  --star-count: 5000;
+  --star-max-size: 0.2;
+}
+.slogan-text {
+  font-size: 5em;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+.slogan-text #never {
+  color: #f8f8f8;
+}
+.slogan-text #settle {
+  color: #199aee;
+}
+
+#picture {
+  background-image: url("../recources/OnePlus.webp");
+  background-size: 300px;
+  min-width: 300px;
+  min-height: 430px;
+  border-radius: 10px;
+}
+#picture:hover {
+  cursor: pointer;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #f8f8f8;
+  background-color: #252525;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=style.css.map */

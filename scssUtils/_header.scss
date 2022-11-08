@@ -1,0 +1,55 @@
+@import "variables";
+
+header{
+  background-color: $backGroundColorHeader;
+  opacity: 0.9;
+  border-radius: 2em;
+
+  margin: 10px 5px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 40px 10% 40px;
+
+  .logo{
+    font-size: 5em;
+    text-decoration: none;
+    color: $colorPrimary;
+
+    span{
+      color: $textColorWhite;
+    }
+
+    &:hover{
+      color: $textColorWhite;
+      transition: 0.5s ease-in-out;
+      span{
+        color: $colorPrimary;
+      }
+    }
+  }
+
+  ul{
+    li{
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px 20px;
+
+      a{
+        font-size: 3em;
+        text-decoration: none;
+        font-weight: bold;
+        color: $textColorWhite;
+
+        &:hover{
+          color: $colorPrimary;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "variables";
+
+$starCount: 5000;
+
+#houdini{
+  margin-top: 50em;
+
+  height: 70vh;
+}
+
+.slogan{
+  @include center;
+  height: 120vh;
+  padding-top: 15em;
+
+  background: paint(stars), #000000;
+  --star-count: 5000;
+  --star-max-size: 0.2;
+
+  &-text{
+    font-size: 5em;
+    font-weight: 1000;
+    text-transform: uppercase;
+
+    #never{
+      color: $textColorWhite;
+    }
+    #settle{
+      color: $colorPrimary;
+    }
+  }
+}
+
+#picture{
+  //background-color: #199aee;
+  background-image: url("../recources/OnePlus.webp");
+  background-size: 300px;
+  min-width: 300px;
+  min-height: 430px;
+
+  border-radius: 10px;
+
+  &:hover{
+    cursor: pointer;
+
+    $starCount: 10000;
+  }
+}

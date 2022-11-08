@@ -1,0 +1,43 @@
+@use "scssUtils/header";
+@use "scssUtils/home";
+@use "scssUtils/shop";
+@use "scssUtils/houdini";
+
+@import "scssUtils/variables";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: $textColorWhite;
+  background-color: $backGroundColor;
+
+  overflow-x: hidden;
+}
+
+body{
+  margin: 0;
+}
+
+h1{
+  font-size: 7rem;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+
+
+
+
+
