@@ -13,7 +13,15 @@ gsap.from("#never",{
     duration: 3
 })
 
-
+gsap.to("slogan",{
+    scrollTrigger: {
+        trigger: ".slogan",
+        toggleActions: "play none none none"
+    },
+    x: 0,
+    rotation: 180,
+    duration: 1
+})
 
 function loadAnimation(){
     TweenMax.to(".stripe", 2, {
