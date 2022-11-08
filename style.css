@@ -196,9 +196,6 @@ nav ul li a:hover {
   min-height: 430px;
   border-radius: 10px;
 }
-#picture:hover {
-  cursor: pointer;
-}
 
 *, *::before, *::after {
   box-sizing: border-box;

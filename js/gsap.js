@@ -1,28 +1,5 @@
 addEventListener('DOMContentLoaded', (event) => {loadAnimation();});
 
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.from("#never",{
-    scrollTrigger:{
-        trigger: "#never",
-        toggleActions: "play none none none"
-    },
-
-    x: 0,
-    rotation: 180,
-    duration: 3
-})
-
-gsap.to("slogan",{
-    scrollTrigger: {
-        trigger: ".slogan",
-        toggleActions: "play none none none"
-    },
-    x: 0,
-    rotation: 180,
-    duration: 1
-})
-
 function loadAnimation(){
     TweenMax.to(".stripe", 2, {
         delay: 0,

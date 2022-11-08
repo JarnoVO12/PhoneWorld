@@ -39,10 +39,4 @@ $starCount: 5000;
   min-height: 430px;
 
   border-radius: 10px;
-
-  &:hover{
-    cursor: pointer;
-
-    $starCount: 10000;
-  }
 }
